@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+
+    <style>
+        button {
+            width: 200px;
+            height: 60px;
+            background-color: antiquewhite;
+            font-size: 24px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <script>
+        function displayDate() {
+            //promt
+            const dateNum = prompt("Enter number from 1 - 7 ");
+
+            //convert input
+            const dayNum = parseInt(dateNum);
+
+            //check for valid test
+            if (isNaN(dayNum) || dayNum < 1 || dayNum > 7) {
+                alert("Please enter valid Number (1 -7)");
+                return;
+            }
+
+            //Define array
+            const weekDay = [
+                "Sunday", "Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" 
+            ];
+
+            //Get Day
+            const dayName = weekDay[dayNum - 1];
+
+            //Display day
+            alert(`The day set to ${dayNum} is: ${dayName}`);
+
+        }
+    </script>
+
+    <button onclick="displayDate()">Get Day</button>
+
+
+</body>
+</html>

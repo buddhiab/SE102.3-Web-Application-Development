@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operation</title>
+
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        function mathOperation() {
+            //prompt user
+            const num1 = parseFloat(prompt("Enter the First Number : "));
+            const num2 = parseFloat(prompt("Enter the Second Number: "));
+
+            //check valid number
+            if(isNaN(num1) || isNaN(num2)) {
+                alert("Enter Valid Numbers.");
+                return;
+            }
+
+            //ask the user choose
+            const operation = prompt("Enter the operation (+ , - , * , /):");
+
+            //perform
+            let result;
+            switch (operation) {
+                case '+':result = num1 + num2; break;
+                case '-':result = num1 - num2; break;
+                case '*':result = num1 * num2; break;
+                case '/':if(num == 0) {
+                    alert("Division by zero is not allowed.");
+                    return;
+                }
+                result = num1 / num2; break;
+                default:alert("Invalid Choice. Enter Valid Operator");
+            }
+            //result
+            alert(`The Result : ${result}`);
+        }
+    </script>
+
+    <button onclick="mathOperation()">Click & Enjoy</button>
+
+</body>
+</html>

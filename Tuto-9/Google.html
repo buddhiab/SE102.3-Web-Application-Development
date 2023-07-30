@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button id="gBtn">Google</button>
+
+    <script>
+        document.getElementById('gBtn').addEventListener('click', function() {
+            const confirmed = confirm("Do you want visit Google?");
+
+            if(confirmed) {
+                window.location.href = "https://google.com";
+            } else {
+                alert("You decided to stay.");
+            }
+        });
+    </script>
+
+</body>
+</html>

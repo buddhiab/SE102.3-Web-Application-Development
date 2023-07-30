@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are of Circle</title>
+</head>
+<body>
+
+    <script>
+        function calculateArea() {
+
+            //prompt user
+            const radius = prompt("Enter Radius of the Circle ");
+
+            //convert input
+            const radiusNumber = parseFloat(radius);
+
+            //calculate are
+            const area = Math.PI * Math.pow(radiusNumber, 2);
+
+            //Display result
+            alert(`The area of Circle radius ${radiusNumber} is: ${area.toFixed(2)}`);
+
+        }
+    </script>
+
+    <h3>Click the button</h3>
+    <button onclick="calculateArea()">Calculate Circle Area</button>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Color</title>
+
+    <style>
+        .color-btn {
+            cursor: pointer;
+            margin: 30px;
+            width: 150px;
+            height: 100px;
+            color: white;
+            font-size: 24px;
+            font-style: italic;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #red {
+            background-color: red;
+        }
+        #green {
+            background-color: green;
+        }
+        #blue {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="color-btn" id="red" onmouseover="changeBackgroundColor('red')" onmouseout="resetBackgroundColor()">Red</button>
+    <button class="color-btn" id="green" onmouseover="changeBackgroundColor('green')" onmouseout="resetBackgroundColor()">Green</button>
+    <button class="color-btn" id="blue" onmouseover="changeBackgroundColor('blue')" onmouseout="resetBackgroundColor()">Blue</button>
+
+    <script src="js-color.js"></script>
+
+</body>
+</html>
