@@ -1,0 +1,49 @@
+body {
+    background-image: url(bg.jpg);
+}
+h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(214, 135, 9);
+    width: 400px;
+    margin: auto;
+    padding: 2px;
+}
+
+.card {
+    background-color: rgb(38, 33, 54);
+    color: yellow;
+    padding: 23px;
+    width: 16cm;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.card table, td{
+    margin: auto;
+}
+
+.card td {
+    padding: 3%;
+    font-size: 18px;
+}
+input[type=submit]
+ {
+    padding: 3%;
+    background-color: rgb(109, 165, 109);
+    color: white;
+    border-color:  rgb(214, 135, 9);
+    border-style: hidden;
+    width: 3cm;
+    font-size: 19px;
+}
+
+input[type=reset] {
+    padding: 3%;
+    background-color: rgb(207, 63, 63);
+    color: white;
+    border-color:  rgb(214, 135, 9);
+    border-style: hidden;
+    width: 3cm;
+    font-size: 19px;
+}

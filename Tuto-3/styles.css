@@ -1,0 +1,55 @@
+.t1 {
+    text-align: left;
+    margin: 6px;
+}
+.t1 :where(table,th ,td) {
+    border: 1px solid #0c0a0a;
+    text-align: center;
+    margin: auto;
+    margin-block-end: 10%;
+    font-size: 48px;
+    padding: 2px;
+}
+
+.t2 :where(table,th,td) {
+    border: 2px rgb(0, 0, 0);
+    border-style: double;
+    text-align: center;
+    margin: auto;
+    margin-block-end: 10%;
+    font-size: 48px;
+    
+}
+
+.t3 {
+    background-color: #828080;
+    width: 16cm;
+    height:12.5cm;
+    margin: auto;
+}
+.t3 table {
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.t3 :where(table,th,td) {
+    border: 1px solid rgb(8, 8, 8);
+    text-align: center;
+    background-color:yellow ;
+    font-size: 24px;
+}
+.t3 th {
+    background-color: rgb(244, 248, 252);
+}
+.t3 caption{
+    font-family: Arial;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.t3 a {
+    color: red;
+    font-weight: 548;
+}
+

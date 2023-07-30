@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+</head>
+<body>
+    <style>
+        .one table, caption {
+            margin-bottom:6px;
+            
+        }
+        .one table ,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 30%;
+            margin-left: 8%;
+        }
+
+        .c {
+            border: 1px solid;
+            margin-top: 30px;
+            width: 10%;
+            padding: 6px;
+        }
+        .c,tr {
+            margin-left: 8%;
+            margin-bottom: 10px;
+        }
+        .tab {
+            margin-left: 8%;
+            margin-top: 30px;
+        }
+        .tab :where(table,td) {
+            border: none;
+            width: 9cm;
+        }
+    </style>
+    <h1>HTML TAGS</h1>
+
+    <div class="one">
+        <table>
+            <caption>Student Records<br></caption><br>
+            <tr>
+                <td>Student ID</td>
+                <td>Student Name</td>
+                <td>Degree</td>
+            </tr>
+            <tr>
+                <td>1002323</td>
+                <td>Nimesh Fernando</td>
+                <td>Bsc in IT</td>
+            </tr>
+            <tr>
+                <td>1002424</td>
+                <td>Lasadun Bandara</td>
+                <td>Bsc in Computer Science</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="c">
+        <table>
+            <tr>Programming languages<br>
+                <ol type="I">
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>JAVA</li>
+                    <li>PYTHON</li>
+                </ol>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="tab">
+        <table>
+            <form action="/action_page.php" method="get" target="_blank">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="index">Index Number</label></td>
+                    <td><input type="text" id="index" name="index"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

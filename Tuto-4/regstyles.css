@@ -1,0 +1,32 @@
+.reg  {
+    border: 1px solid rgb(89, 150, 229);
+    padding: 8px;
+    width: 12cm;
+    margin-left: 10%;
+}
+
+.reg table {
+    border:2cm black;
+}
+
+:where(td) {
+    font-size: 22px;
+    border: 1px black;
+}
+
+.reg :where(caption) {
+    font-size: 36px;
+    font-weight: bold;
+}
+h1{
+    margin-left: 10%;
+}
+
+.car {
+    padding: 8px;
+    width: 12cm;
+    margin-left: 10%;
+}
+.car legend {
+    font-size: 22px;
+}

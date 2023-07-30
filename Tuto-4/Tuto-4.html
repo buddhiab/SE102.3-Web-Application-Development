@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="regstyles.css">
+</head>
+<body>
+    <div class="reg">
+        <table>
+            <h1> Registration Form</h1>
+            <form action="/action_page.php" method="get" target="_blank">
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name</label></td>
+                    <td><input type="text" id="lname" name="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="mnum">Mobile Number</label></td>
+                    <td><input type="number" id="mnum" name="mnum"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="fmus">Favourite Music</label></td>
+                    <td><input type="checkbox" id="pop" name="pop" value="pop">
+                        <label for="pop">Pop</label>
+                        <input type="checkbox" id="rock" name="rock" value="rock">
+                        <label for="rock">Rock</label>
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="other">Other</label></td>
+                </tr>
+                <tr><td><label for="adetail">Additional Details</label> </td>
+                    <td><textarea name="adetail" id="adetail" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" id="agree" name="agree">I agree to the terms and conditions</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+
+            </form>
+        </table>
+    </div><br><br><br>
+
+    <div class="car">
+        <fieldset><legend>Car Registration</legend>
+            <table>
+                <form action="/action_page.php" method="get" target="_blank">
+                    <tr>
+                        <td><label for="owname">Owner Name</label></td>
+                        <td><input type="text" id="owname" name="owname" placeholder="Owner Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="number">Phone<br>Number</label></td>
+                        <td><input type="number" id="number" name="number" placeholder="Phone Number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td>
+                            <select id="country" name="country">
+                                <option value="Sri Lanka">Sri Lanka</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="model">Car Model</label></td>
+                        <td><input type="text" id="model" name="model"></td>
+                    </tr>
+                    <tr><td><label for="year">Manufacture<br>Year</label></td>
+                        <td><select name="year" id="year">
+                            <option value="sy">Select Year</option>
+                        </select></td>
+                    </tr>   
+                    <tr>
+                        <td><label for="transmission">Transmission</label></td>
+                        <td><input type="radio" id="manu" name="trans" value="manual">
+                            <label for="manual">Manual</label>
+                            <input type="radio" id="auto" name="trans" value="auto">
+                            <label for="auto">Auto</label>
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td><label for="other">Other</label></td>
+                        <td><textarea name="other" id="" cols="20" rows="3"></textarea></td>
+                    </tr>         
+                    <tr>
+                        <td colspan="2"><input type="checkbox" id="agre" name="agre">
+                        I agree to the conditions and terms</td>
+                    </tr>
+            </table>
+        </fieldset>
+    </div>
+
+</body>
+</html>
